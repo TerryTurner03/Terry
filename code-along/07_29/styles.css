@@ -3,35 +3,16 @@
     margin-top: 50px;
 }
 .jumbotron-fluid{
-    height: auto 
+    height: auto;
+}
+.mobile-menu-wrapper{
+    height: 100vh;
+}
+.list-group-item > a{
+    color: white;
 }
 .row{
     padding: 20;
-}
-.container-sm{
-     background-color: lightyellow;
-
-}
-.container-md{
-     background-color: lightgreen;
-    
-}
-.container-lg{
-     background-color: lightcoral;
-    
-}
-.container-xl{
-     background-color: lightgrey;
-
-}
-#column-1{
-    /* background-color: lightslategray */
-}
-#column-2{
-    /* background-color: lightgreen; */
-}
-#column-3{
-    /* background-color: lightsalmon; */
 }
 .section-header{
     margin-bottom: 20px;
