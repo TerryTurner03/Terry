@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<!-- Font-Awesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- Collapse -->
+	<div class="collapse fixed-top bg-dark" id="mobileNavbar" >
+		<div class="container mobile-menu-wrapper">
+			<div class="row">
+				<div class="col">
+					<ul class="list-group mt-5 text-right">
+						<li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
+							<a href="#info">Small Information</a>
+						</li>
+						<li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
+							<a href="#creator">More About The Creator</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar -->
+    <nav class="navbar fixed-top" role="navigation">
+		<a href="#" class="navbar-brand">
+			<img height="35" img width="100" src="data:image/png;base64,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" alt="Smiley">
+            </a>
+
+			<!-- Mobile -->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#mobileNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+
+			<!-- Desktop -->
+			<ul class="nav d-none">
+				<li class="nav-item">
+					<a href="#emojis" class="nav-link active">Emoji</a>
+				</li>
+				<li class="nav-item">
+					<a href="#carousel" class="nav-link active">Carousel</a>
+				</li>
+				<li class="nav-item">
+					<a href="#forms" class="nav-link active">Form</a>
+				</li>
+				<li class="nav-item">
+					<a href="#modal" class="nav-link active">Modal</a>
+				</li>
+				<li class="nav-item">
+					<a href="#collapse" class="nav-link active">Collapse</a>
+				</li>
+				<li class="nav-item">
+					<a href="#dropdown" class="nav-link active">Dropdown</a>
+				</li>
+			</ul>
+	</nav>
+
+	<!-- Jumbotron -->
+	<div class="jumbotron jumbotron-fluid py-5">
+		<div class="container-fluid">
+			<h1 class="display-4">Hello.</h1>
+            <a href="infopage.html"><button>About Me</button></a> 
+
+			<hr>
+		</div>
+	</div>
+
+	<!-- Container -->
+	<div class="container-fluid">
+
+    <div id="creator" class="row"> </div>
+
+		    <!-- Cards -->
+		<div id="cards" class="row">
+			<h2 class="section-header">More About Me</h2>
+	    </div>
+	    <div class="row">
+            <div class="col-xs-10 col-sm-6 mb-5">
+                <div class="card" style="width: auto;">
+                    <div class="card-header">Nothing Much</div>
+                    <img src="https://picography.co/wp-content/uploads/2019/06/picography-golden-mountain-sunset-sky-clouds-light-900x600.jpg" 
+                    class="card-img-top" 
+                    alt="Sunset Image">
+                    <div class="card-body">
+                        <h5 class="card-title"> Small Info</h5>
+                        <p class="card-text">Hello, nothing of much importance is here but a mere introdution. Hello !</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Open</a>
+                    </div>
+                </div>
+            </div>
+	    </div>
+	<!-- Modals -->
+	<div class="modal fade" id="exampleModal">
+		<div class="modal-dialog">
+		<div class="modal-content">
+	<!-- Modal Header -->
+		<div class="modal-header">
+			<h5 class="modal-title">Modal Title</h5>
+			<button class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            </button>
+		</div>
+	<!-- Modal Body -->
+		<div class="modal-body">
+			<p>This is the Modal's Body. Information goes here.</p>
+		</div>
+	<!-- Modal Footer -->
+		<div class="modal-footer">
+			<button class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>
+		</div>
+		</div>
+
+        </div>
+
+
+	<!-- Carousel -->
+		<div class="row" id="carousel">
+			<h1 class="section-header">Carousel</h1>
+		</div>
+
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+	<!-- Carousel Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+
+	<!-- Carousel Inner -->
+		<div class="carousel-inner">
+
+	<!-- Carousel Items -->
+		<div class="carousel-item active">
+		<div class="carousel-caption">
+			<h5>Slide 1</h5>
+		</div>
+			<img src="https://1.bp.blogspot.com/-284zVHSSNdU/Xkws-rEkenI/AAAAAAAA1UE/rGYdlnijghw6-wqFh45sYXYFbCZUEngdQCEwYBhgL/s1600/sunset_3.jpg" alt="" class="d-block w-100">
+        </div>
+		<div class="carousel-item">
+		<div class="carousel-caption">
+			<h5>Slide 2</h5>
+		</div>
+			<img src="https://image.dynamixse.com/crop/900x600/webp.q80.png-lossy-85/https://dynamix-cdn.s3.amazonaws.com/pikearmstrong/armstronggardencom_780232638.jpeg" alt="" class="d-block w-100">
+        </div>
+		<div class="carousel-item">
+		<div class="carousel-caption">
+			<h5>Slide 3</h5>
+		</div>
+			<img src="https://cdn.shopify.com/s/files/1/0073/0375/7883/files/Denali.jpg?v=1547210395" alt="" class="d-block w-100">
+        </div>
+		</div>
+		</div>
+        </div>
+
+    <div class="row" id="forms">
+			<h1 class="section-header">Forms</h1>
+		</div>
+
+		<div class="row input-type">
+		<div class="col-xs-12 col-sm-6">
+			<h6 class="input-type-header">Regular Input</h6>
+		<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="basic-addon1">1</span>
+			<input type="text" class="form-control" placeholder="Username">
+        </div>
+		</div>
+		<div class="input-group">
+		<div class="input-group-append">
+			<span class="input-group-text" id="basic-addon1">2</span>
+			<input type="text" class="form-control" placeholder="Password">
+         </div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <!--Footer Stuff-->
+	
+	<footer class="page-footer">
+	    <div class="container">
+	    <div class="row">
+	    <div class="col-lg-8 col-md-8 col-sm-12">
+		    <h6 class="text-uppercase font-weight-bold">Additional Information
+		    </h6>
+            <p>This is a sample is still being worked on so that it may reach a better point!</p>
+            </div>
+	    <div class="col-lg-4 col-md-4 col-sm-12">
+		    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+	    </div>
+	    </div>
+	    <div class="footer-copyright text-center">RandoWebsite.com</div>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+	crossorigin="anonymous"></script>
+
+</body>
+</html>

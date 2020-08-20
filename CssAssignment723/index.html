@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<!-- Font-Awesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+		integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+</head>
+
+<body>
+	<!-- Collapse -->
+	<div class="collapse fixed-top bg-dark" id="mobileNavbar" >
+		<div class="container mobile-menu-wrapper">
+			<div class="row">
+				<div class="col">
+					<ul class="list-group mt-5 text-right">
+						<li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
+							<a href="#emojis">Emojis</a>
+						</li>
+						<li class="list-group-item bg-dark border-0" data-toggle="collapse" data-target="#mobileNavbar">
+							<a href="#creator">More About The Creator</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Navbar -->
+    <nav class="navbar fixed-top" role="navigation">
+		<a href="#" class="navbar-brand">
+			<img height="66" img width="100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRwttwItxnyQ_E5R3NakDasuC0g_T_eU3Rw6Q&usqp=CAU" alt="Houston">
+            </a>
+
+			<!-- Mobile -->
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#mobileNavbar">
+                <i class="fas fa-bars"></i>
+            </button>
+
+			<!-- Desktop -->
+			<ul class="nav d-none">
+				<li class="nav-item">
+					<a href="#emojis" class="nav-link active">Emoji</a>
+				</li>
+				<li class="nav-item">
+					<a href="#carousel" class="nav-link active">Carousel</a>
+				</li>
+				<li class="nav-item">
+					<a href="#forms" class="nav-link active">Form</a>
+				</li>
+				<li class="nav-item">
+					<a href="#modal" class="nav-link active">Modal</a>
+				</li>
+				<li class="nav-item">
+					<a href="#collapse" class="nav-link active">Collapse</a>
+				</li>
+				<li class="nav-item">
+					<a href="#dropdown" class="nav-link active">Dropdown</a>
+				</li>
+			</ul>
+	</nav>
+
+	<!-- Jumbotron -->
+	<div class="jumbotron jumbotron-fluid py-5">
+		<div class="container-fluid">
+			<h1 class="display-4">Welcome !</h1>
+            <a href="infopage.html"><button>Second Page</button></a> 
+
+			<hr>
+		</div>
+	</div>
+
+	<!-- Container -->
+	<div class="container-fluid">
+
+    <div id="creator" class="row"> </div>
+
+		    <!-- Cards -->
+		<div id="cards" class="row">
+			<h2 class="section-header">More About Me</h2>
+	    </div>
+	    <div class="row">
+            <div class="col-xs-10 col-sm-6 mb-5">
+                <div class="card" style="width: auto;">
+                    <div class="card-header">Sunset</div>
+                    <img src="https://picography.co/wp-content/uploads/2019/06/picography-golden-mountain-sunset-sky-clouds-light-900x600.jpg" 
+                    class="card-img-top" 
+                    alt="Sunset Image">
+                    <div class="card-body">
+                        <h5 class="card-title"> Sunset</h5>
+                        <p class="card-text">This Sunset looks pretty cool over the mountains</p>
+                        <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Click</a>
+                    </div>
+                </div>
+            </div>
+	    </div>
+	<!-- Modals -->
+	<div class="modal fade" id="exampleModal">
+		<div class="modal-dialog">
+		<div class="modal-content">
+	<!-- Modal Header -->
+		<div class="modal-header">
+			<h5 class="modal-title">Modal Title</h5>
+			<button class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            </button>
+		</div>
+	<!-- Modal Body -->
+		<div class="modal-body">
+			<p>This is the Modal's Body. Information goes here.</p>
+		</div>
+	<!-- Modal Footer -->
+		<div class="modal-footer">
+			<button class="btn btn-danger" data-dismiss="modal">Close</button>
+		</div>
+		</div>
+		</div>
+
+        </div>
+
+
+	<!-- Carousel -->
+		<div class="row" id="carousel">
+			<h1 class="section-header">Carousel</h1>
+		</div>
+
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="3000">
+
+	<!-- Carousel Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+
+	<!-- Carousel Inner -->
+		<div class="carousel-inner">
+
+	<!-- Carousel Items -->
+		<div class="carousel-item active">
+		<div class="carousel-caption">
+			<h5>Slide 1</h5>
+		</div>
+			<img src="https://1.bp.blogspot.com/-284zVHSSNdU/Xkws-rEkenI/AAAAAAAA1UE/rGYdlnijghw6-wqFh45sYXYFbCZUEngdQCEwYBhgL/s1600/sunset_3.jpg" alt="" class="d-block w-100">
+        </div>
+		<div class="carousel-item">
+		<div class="carousel-caption">
+			<h5>Slide 2</h5>
+		</div>
+			<img src="https://image.dynamixse.com/crop/900x600/webp.q80.png-lossy-85/https://dynamix-cdn.s3.amazonaws.com/pikearmstrong/armstronggardencom_780232638.jpeg" alt="" class="d-block w-100">
+        </div>
+		<div class="carousel-item">
+		<div class="carousel-caption">
+			<h5>Slide 3</h5>
+		</div>
+			<img src="https://cdn.shopify.com/s/files/1/0073/0375/7883/files/Denali.jpg?v=1547210395" alt="" class="d-block w-100">
+        </div>
+		</div>
+		</div>
+        </div>
+
+    <div class="row" id="forms">
+			<h1 class="section-header">Forms</h1>
+		</div>
+
+		<div class="row input-type">
+		<div class="col-xs-12 col-sm-6">
+			<h6 class="input-type-header">Regular Input</h6>
+		<div class="input-group">
+		<div class="input-group-prepend">
+			<span class="input-group-text" id="basic-addon1">1</span>
+			<input type="text" class="form-control" placeholder="Username">
+        </div>
+		</div>
+		<div class="input-group">
+		<div class="input-group-append">
+			<span class="input-group-text" id="basic-addon1">2</span>
+			<input type="text" class="form-control" placeholder="Password">
+         </div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <!--Footer Stuff-->
+	
+	<footer class="page-footer">
+	    <div class="container">
+	    <div class="row">
+	    <div class="col-lg-8 col-md-8 col-sm-12">
+		    <h6 class="text-uppercase font-weight-bold">Additional Information
+		    </h6>
+            <p>This is a sample is still being worked on so that it may reach a better point!</p>
+            </div>
+	    <div class="col-lg-4 col-md-4 col-sm-12">
+		    <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+	    </div>
+	    </div>
+	    <div class="footer-copyright text-center">RandoWebsite.com</div>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+	crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+	integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+	crossorigin="anonymous"></script>
+
+</body>
+</html>
